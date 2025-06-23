@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PSX Header</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="psx-header">
+    <div class="top-bar">
+      <img src="./logo-animated-75y.gif" alt="PSX Logo" class="logo"/>
+
+      <div class="top-links">
+        <a href="#">Market Summary</a>
+        <a href="#">PSX Knowledge Center</a>
+        <a href="#">PSX Data Portal</a>
+        <a href="#">Careers</a>
+        
+      </div>
+
+      <div class="search-lang">
+        <input type="text" placeholder="Search on PSX" />
+        <button class="lang-btn active">English</button>
+        <button class="lang-btn">Urdu</button>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#">The Exchange</a>
+      <a href="#">Product And Services</a>
+      <a href="#">Resources And Tools</a>
+      <a href="#">Media Center</a>
+      <a href="#">Legal Framework</a>
+    </nav>
+  </header>
+  <img src="./Main-Banner-06-05-25.png" style="width: 1545px;" alt="banner">
+
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1;
+      min-width: 300px;
+      max-width: 450px;
+    }
+
+    .card h2 {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 18px;
+      display: inline-block;
+      margin: 0 0 10px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .positive { color: green; font-weight: bold; }
+    .negative { color: red; font-weight: bold; }
+
+    .market-activity {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .market-activity div {
+      margin: 6px 0;
+    }
+
+    .highlight-label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- 1: Market Summary Main Board -->
+    <div class="card">
+      <h2>Market Summary Main Board</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>SCRIP</th><th>PRICE</th><th>HIGH</th><th>LOW</th><th>CHANGE</th><th>VOLUME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>PRL</td><td>33.64</td><td>34.09</td><td>31.45</td><td class="positive">2.68</td><td>50,818,876</td></tr>
+          <tr><td>CNERGY</td><td>7.8</td><td>7.91</td><td>7.5</td><td class="positive">0.48</td><td>47,570,881</td></tr>
+          <tr><td>KEL</td><td>4.46</td><td>4.56</td><td>4.3</td><td class="positive">0.16</td><td>40,246,546</td></tr>
+          <tr><td>KOSM</td><td>5.32</td><td>5.48</td><td>5.16</td><td class="positive">0.18</td><td>32,888,417</td></tr>
+          <tr><td>PREMA</td><td>49.32</td><td>49.32</td><td>45.0</td><td class="positive">4.48</td><td>29,667,657</td></tr>
+          <tr><td>SSGC</td><td>37.1</td><td>37.65</td><td>36.1</td><td class="positive">0.91</td><td>25,344,612</td></tr>
+          <tr><td>WAVES</td><td>7.45</td><td>7.47</td><td>6.9</td><td class="positive">0.29</td><td>21,773,148</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 2: Market Activity -->
+    <div class="card">
+      <h2>Market Activity</h2>
+      <div class="market-activity">
+        <div><span class="highlight-label">Market Status:</span> Closed</div>
+        <div><span class="highlight-label">Current Index:</span> 119,961.91</div>
+        <div><span class="highlight-label">Change:</span> 1425.39</div>
+        <div><span class="highlight-label">Percent Change:</span> 1.2%</div>
+        <div><span class="highlight-label">High:</span> 119,990.30</div>
+        <div><span class="highlight-label">Low:</span> 118,871.13</div>
+        <div><span class="highlight-label">Volume:</span> 310,688,621</div>
+        <div><span class="highlight-label">Previous Close:</span> 118,536.52</div>
+        <div><span class="highlight-label">Value:</span> 28,408,222,818</div>
+      </div>
+    </div>
+
+    <!-- 3: Recent Quotes -->
+    <div class="card">
+      <h2>Recent Quotes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>SYMBOL</th><th>PRICE</th><th>CHANGE</th><th>%CHANGE</th><th>VOLUME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>AABS</td><td>766.85</td><td class="negative">-8.19</td><td class="negative">-1.07</td><td>0</td></tr>
+          <tr><td>KAPCO</td><td>31.09</td><td class="negative">-0.1</td><td class="negative">-0.32</td><td>0.445</td></tr>
+          <tr><td>KML</td><td>31.86</td><td>0.00</td><td>0.00</td><td>0</td></tr>
+          <tr><td>OGDC</td><td>213.75</td><td class="positive">1.06</td><td class="positive">0.50</td><td>6.853</td></tr>
+          <tr><td>PAEL</td><td>47.03</td><td class="positive">0.83</td><td class="positive">1.78</td><td>7.933</td></tr>
+          <tr><td>PPL</td><td>173.5</td><td class="positive">3.34</td><td class="positive">1.96</td><td>16.962</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      flex: 1;
+      min-width: 300px;
+    }
+    .card h2 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    .announcement, .result {
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    .announcement span, .result span {
+      font-weight: bold;
+    }
+    .result-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .result-table th, .result-table td {
+      border: 1px solid #ddd;
+      padding: 6px;
+      text-align: center;
+    }
+    .result-table th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>📣 PSX ANNOUNCEMENTS (NOTICES)</h2>
+    <div class="announcement"><span>2025-05-16 20:12:08</span><br>EXCHANGE: For All Market Participants Government Of Pakistan (gop) Ijarah Green Sukuk (gigs) Auction Resu...</div>
+    <div class="announcement"><span>2025-05-16 19:14:15</span><br>EXCHANGE: Unusual Movement In Volume Of The Shares Of Waves Corporation Limited (waves)</div>
+    <div class="announcement"><span>2025-05-16 19:11:49</span><br>EXCHANGE: Unusual Movement In Volume Of The Shares Of Crescent Star Insurance Limited (csil)</div>
+    <div class="announcement"><span>2025-05-16 19:05:04</span><br>EXCHANGE: Unusual Movement In Price Of The Shares Of Shakarganj Limited (sml)</div>
+    <div class="announcement"><span>2025-05-16 18:56:41</span><br>EXCHANGE: Unusual Movement In Price Of The Shares Of Pia Holding Company Limited – Class B (piahlcb)</div>
+  </div>
+
+  <div class="card">
+    <h2>📂 COMPANY ANNOUNCEMENTS</h2>
+    <div class="announcement"><span>2025-05-16 17:06:08</span><br>BELA: Bela Automotives Limited Public Announcement Of Offer To Acquire 2901100 Ordinary Shares...</div>
+    <div class="announcement"><span>2025-05-16 16:52:43</span><br>OTHER: Notice No. R-73 Regarding Share Certificate(s) Found By Famco Share Registration Services (pvt)...</div>
+    <div class="announcement"><span>2025-05-16 16:46:47</span><br>OTHER: Adam Securities Limited Public Announcement For Acquire-bela Automotives Limited</div>
+    <div class="announcement"><span>2025-05-16 16:44:44</span><br>OTHER: Notice No. R-74 Regarding Loss Of Share Certificate(s) By Famco Share Registration Services (pv...)</div>
+  </div>
+
+  <div class="card">
+    <h2>📊 FINANCIAL RESULTS</h2>
+    <table class="result-table">
+      <tr>
+        <th>Company</th>
+        <th>Year ended / Half Year ended</th>
+        <th>Dividend / Bonus / Right</th>
+        <th>P & L Before Tax Rs.(M)</th>
+        <th>P & L After Tax Rs.(M)</th>
+        <th>EPS /(LPS)</th>
+      </tr>
+      <tr>
+        <td>Habib Sugar</td>
+        <td>31/03/2024(HY)</td>
+        <td>-</td>
+        <td>1,156.798</td>
+        <td>667.144</td>
+        <td>4.94</td>
+      </tr>
+      <tr>
+        <td>PIA Holding Co.Ltd</td>
+        <td>30/06/2024(HY)</td>
+        <td>-</td>
+        <td>(4,024.825)</td>
+        <td>(4,045.825)</td>
+        <td>(0.77)</td>
+      </tr>
+      <tr>
+        <td>PIA Holding Co.Ltd</td>
+        <td>30/06/2024(HY)</td>
+        <td>-</td>
+        <td>(5,513.168)</td>
+        <td>(7,175.327)</td>
+        <td>(1.37)</td>
+      </tr>
+      <tr>
+        <td>PIA Holding Co.Ltd</td>
+        <td>30/09/2024(IIQ)</td>
+        <td>-</td>
+        <td>(9,312.478)</td>
+        <td>(9,312.478)</td>
+        <td>(1.78)</td>
+      </tr>
+      <tr>
+        <td>PIA Holding Co.Ltd</td>
+        <td>30/09/2024(IIQ)</td>
+        <td>-</td>
+        <td>(5,165.383)</td>
+        <td>(7,475.373)</td>
+        <td>(1.43)</td>
+      </tr>
+      <tr>
+        <td>Sui South Gas</td>
+        <td>30/06/2024(IQ)</td>
+        <td>-</td>
+        <td>6,839.126</td>
+        <td>6,839.126</td>
+        <td>7.76</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+
+</body>
+</html>
